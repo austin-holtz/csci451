@@ -59,6 +59,7 @@ int main(int argc, char const *argv[])
     while(1){
         printf("p3 entered while loop\n");
         while(semctl(sem_id, 0, GETVAL)==PIPE_EMPTY); //wait
+        printf("reading from pipe...\n");
         if(read(pipe_2_read, input_buffer, 50)==-1){
             perror("p3 reading pipe");
         }

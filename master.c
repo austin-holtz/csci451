@@ -10,6 +10,7 @@
 #include <sys/ipc.h>
 #include <sys/sem.h>
 #include <sys/shm.h>
+#include <sys/wait.h>
 
 #define PIPE_EMPTY 0
 #define PIPE_FULL 1
