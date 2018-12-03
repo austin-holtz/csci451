@@ -141,7 +141,7 @@ int main(int argc, char const *argv[])
     }
     else if (current_pid==0){
         if(execl("./p1", input_file_name, pipe_1_write_str, sem_1_key_str, NULL)==-1){
-            perror("Forking program");
+            perror("exec program");
         }
     }
     else{
